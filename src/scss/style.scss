@@ -1,0 +1,29 @@
+$primary-color: #01aeca;
+$warning-color: #f0ac00;
+$bg-color: #f0f5f8;
+
+@import "node_modules/spectre.css/src/spectre";
+@import "node_modules/spectre.css/src/spectre-exp";
+@import "node_modules/spectre.css/src/spectre-icons";
+
+body {
+  background: $bg-color;
+}
+
+.btn-full {
+  width: 100%;
+}
+
+.none {
+  display: none;
+}
+
+.btn-full.btn-action {
+  width: 200px;
+  height: 200px;
+  display: block;
+  border-radius: 50%;
+  position: fixed;
+  top: calc(50% - 100px);
+  left: calc(50% - 100px);
+}

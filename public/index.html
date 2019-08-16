@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset='utf8'>
+	<meta name='viewport' content='width=device-width'>
+
+	<title>Toio Web controller</title>
+	<link rel='stylesheet' href='/style.css'>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+	<script defer src='/bundle.js'></script>
+</head>
+
+<body>
+  <div class="container grid-xs">
+    <div id="start-btn-wrapper">
+      <button class="btn btn-primary btn-full btn-action" id="wble-start">
+        Connect to Toio
+      </button>
+    </div>
+    <div class="none" id="controller-wrapper">
+      <div class="columns">
+        <div class="column col-4"></div>
+        <div class="column col-4"></div>
+        <div class="column col-4"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+  <script src="/__/firebase/6.3.5/firebase-app.js"></script>
+
+  <!-- TODO: Add SDKs for Firebase products that you want to use
+       https://firebase.google.com/docs/web/setup#reserved-urls -->
+
+  <!-- Initialize Firebase -->
+  <script src="/__/firebase/init.js"></script>
+</body>
+</html>
