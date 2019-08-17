@@ -4073,3 +4073,10 @@ body {
   position: fixed;
   top: calc(50% - 100px);
   left: calc(50% - 100px); }
+
+.btn-accele {
+  background: #f0ac00;
+  border: none;
+  color: #fff; }
+  .btn-accele:active, .btn-accele:hover, .btn-accele:focus {
+    background: #bd8700; }

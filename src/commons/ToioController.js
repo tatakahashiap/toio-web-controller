@@ -1,10 +1,10 @@
 import { NearestScanner } from '@toio/scanner';
-const DURATION = 700;
+const DURATION = 0;
 const SPEED = {
-  forward: [100, 100],
-  back: [-100, -100],
-  left: [30, 70],
-  right: [70, 30]
+  forward: [200, 200],
+  back: [-200, -200],
+  left: [60, 140],
+  right: [140, 60]
 };
 
 export default class ToioController {
@@ -25,11 +25,17 @@ export default class ToioController {
     }
   };
 
-  moveCube(direction) {
+  async moveCube(direction) {
     if (this.cube === null) {
       return;
     }
-    this.cube.move(SPEED[direction][0], SPEED[direction][1], DURATION)
+    return this.cube.move(SPEED[direction][0], SPEED[direction][1], DURATION);
+  }
+
+  stopCube() {
+    if (this.cube !== null) {
+      this.cube.stop();
+    }
   }
 
 };

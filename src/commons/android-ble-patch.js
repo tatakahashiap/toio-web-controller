@@ -1,5 +1,4 @@
 if (/android/i.test(navigator.userAgent)) {
-  console.log('aaaaa');
   const mutexify = (promiseFn, mutex = Promise.resolve()) => {
     return function(...args) {
       const job = () => promiseFn.apply(this, args);
