@@ -5,6 +5,8 @@ const toioStartBtn = document.getElementById('wble-start');
 const startBtnWrapper = document.getElementById('start-btn-wrapper');
 const ctrlWrapper = document.getElementById('controller-wrapper');
 const acceleBtn = document.getElementById('accele');
+const spinBtn = document.getElementById('spin');
+const spinRightBtn = document.getElementById('spin-right');
 
 const support = 'ontouchend' in document;
 const TOUCH_START = (support) ? 'touchstart': 'mousedown';
@@ -12,6 +14,7 @@ const TOUCH_END = (support) ? 'touchend': 'mouseup';
 const TOUCH_MOVE = (support) ? 'touchmove': 'mousemove';
 
 let isMove = false;
+let isSpin = false;
 
 toioStartBtn.addEventListener('click', async () => {
   const toio = new ToioController();
@@ -25,17 +28,35 @@ const handleDevice = (toio) => {
   startBtnWrapper.classList.add('none');
   ctrlWrapper.classList.remove('none');
 
+  // deviceorientation
   acceleBtn.addEventListener(TOUCH_START, event => {
     isMove = true;
-    document.getElementById('debug').innerText = event.type;
     window.addEventListener('devicemotion', event => {
-      handleOrientation(event, toio);
+      if (!isSpin) {
+        handleOrientation(event, toio);
+      }
     });
   });
-  // deviceorientation
+
+  spinBtn.addEventListener(TOUCH_START, event => {
+    isSpin = true;
+    toio.spinCube('left');
+  });
+  spinRightBtn.addEventListener(TOUCH_START, event => {
+    isSpin = true;
+    toio.spinCube('right');
+  });
+
   acceleBtn.addEventListener(TOUCH_END, event => {
     isMove = false;
-    document.getElementById('debug').innerText = event.type;
+    toio.stopCube();
+  });
+  spinBtn.addEventListener(TOUCH_END, event => {
+    isSpin = false;
+    toio.stopCube();
+  });
+  spinRightBtn.addEventListener(TOUCH_END, event => {
+    isSpin = false;
     toio.stopCube();
   });
 };

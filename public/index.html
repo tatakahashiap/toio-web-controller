@@ -6,7 +6,7 @@
 
 	<title>Toio Web controller</title>
 	<link rel='stylesheet' href='/style.css'>
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+  <link rel='stylesheet' href='/fontawesome/css/all.min.css'>
 	<script defer src='/bundle.js'></script>
 </head>
 
@@ -18,9 +18,14 @@
       </button>
     </div>
     <div class="none" id="controller-wrapper">
-      <span id="debug"></span>
       <button class="btn btn-accele btn-full btn-action" id="accele">
         Accele
+      </button>
+      <button class="btn btn-accele btn-mini btn-action left" id="spin">
+        <i class="fa fa-fan"></i>
+      </button>
+      <button class="btn btn-accele btn-mini btn-action right" id="spin-right">
+        <i class="fa fa-fan"></i>
       </button>
     </div>
   </div>

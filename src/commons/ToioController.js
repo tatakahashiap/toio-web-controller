@@ -4,7 +4,11 @@ const SPEED = {
   forward: [200, 200],
   back: [-200, -200],
   left: [60, 140],
-  right: [140, 60]
+  right: [140, 60],
+  spin: {
+    left: [-200, 200],
+    right: [200, -200]
+  }
 };
 
 export default class ToioController {
@@ -25,11 +29,18 @@ export default class ToioController {
     }
   };
 
-  async moveCube(direction) {
+  moveCube(direction) {
     if (this.cube === null) {
       return;
     }
     return this.cube.move(SPEED[direction][0], SPEED[direction][1], DURATION);
+  }
+
+  spinCube(direction) {
+    if (this.cube === null) {
+      return;
+    }
+    return this.cube.move(SPEED.spin[direction][0], SPEED.spin[direction][1], DURATION);
   }
 
   stopCube() {

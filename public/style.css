@@ -4059,6 +4059,9 @@ a.text-error:visited {
 body {
   background: #f0f5f8; }
 
+.container {
+  position: relative; }
+
 .btn-full {
   width: 100%; }
 
@@ -4080,3 +4083,17 @@ body {
   color: #fff; }
   .btn-accele:active, .btn-accele:hover, .btn-accele:focus {
     background: #bd8700; }
+
+.btn-mini.btn-action {
+  width: 3rem;
+  height: 3rem;
+  display: block;
+  position: fixed;
+  border-radius: 99px;
+  bottom: 1rem; }
+  .btn-mini.btn-action.left {
+    left: 1rem; }
+  .btn-mini.btn-action.right {
+    right: 1rem; }
+  .btn-mini.btn-action i {
+    font-size: 1.3rem; }
