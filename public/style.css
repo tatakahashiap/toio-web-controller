@@ -653,18 +653,18 @@ html:lang(ko),
       border-bottom-color: #fff;
       border-left-color: #fff; }
   .btn.btn-success {
-    background: #32b643;
-    border-color: #2faa3f;
+    background: #95ba24;
+    border-color: #8bad22;
     color: #fff; }
     .btn.btn-success:focus {
-      box-shadow: 0 0 0 0.1rem rgba(50, 182, 67, 0.2); }
+      box-shadow: 0 0 0 0.1rem rgba(149, 186, 36, 0.2); }
     .btn.btn-success:focus, .btn.btn-success:hover {
-      background: #30ae40;
-      border-color: #2da23c;
+      background: #8eb122;
+      border-color: #84a520;
       color: #fff; }
     .btn.btn-success:active, .btn.btn-success.active {
-      background: #2a9a39;
-      border-color: #278e34;
+      background: #7d9c1e;
+      border-color: #738f1c;
       color: #fff; }
     .btn.btn-success.loading::after {
       border-bottom-color: #fff;
@@ -819,7 +819,7 @@ textarea.form-input, textarea.form-input.input-lg, textarea.form-input.input-sm 
   margin-top: 0.2rem; }
   .has-success .form-input-hint,
   .is-success + .form-input-hint {
-    color: #32b643; }
+    color: #95ba24; }
   .has-error .form-input-hint,
   .is-error + .form-input-hint {
     color: #e85600; }
@@ -1068,12 +1068,12 @@ textarea.form-input, textarea.form-input.input-lg, textarea.form-input.input-sm 
 .has-success .form-input, .form-input.is-success, .has-success
 .form-select,
 .form-select.is-success {
-  background: #f9fdfa;
-  border-color: #32b643; }
+  background: #f9fcf0;
+  border-color: #95ba24; }
   .has-success .form-input:focus, .form-input.is-success:focus, .has-success
   .form-select:focus,
   .form-select.is-success:focus {
-    box-shadow: 0 0 0 0.1rem rgba(50, 182, 67, 0.2); }
+    box-shadow: 0 0 0 0.1rem rgba(149, 186, 36, 0.2); }
 
 .has-error .form-input, .form-input.is-error, .has-error
 .form-select,
@@ -1165,7 +1165,7 @@ input:disabled + .form-icon, input.disabled + .form-icon {
     background: #8ceefe;
     color: #01aeca; }
   .label.label-success {
-    background: #32b643;
+    background: #95ba24;
     color: #fff; }
   .label.label-warning {
     background: #f0ac00;
@@ -1689,7 +1689,7 @@ summary.accordion-header::-webkit-details-marker {
     height: .5em;
     width: .5em; }
     .avatar .avatar-presence.online {
-      background: #32b643; }
+      background: #95ba24; }
     .avatar .avatar-presence.busy {
       background: #e85600; }
     .avatar .avatar-presence.away {
@@ -2246,8 +2246,8 @@ summary.accordion-header::-webkit-details-marker {
     background: rgba(1, 174, 202, 0.95);
     border-color: #01aeca; }
   .toast.toast-success {
-    background: rgba(50, 182, 67, 0.95);
-    border-color: #32b643; }
+    background: rgba(149, 186, 36, 0.95);
+    border-color: #95ba24; }
   .toast.toast-warning {
     background: rgba(240, 172, 0, 0.95);
     border-color: #f0ac00; }
@@ -2371,13 +2371,13 @@ a.text-dark:visited {
   color: #455060; }
 
 .text-success {
-  color: #32b643 !important; }
+  color: #95ba24 !important; }
 
 a.text-success:focus, a.text-success:hover {
-  color: #2da23c; }
+  color: #84a520; }
 
 a.text-success:visited {
-  color: #39c94b; }
+  color: #a6cf28; }
 
 .text-warning {
   color: #f0ac00 !important; }
@@ -2412,7 +2412,7 @@ a.text-error:visited {
   background: #f0f5f8 !important; }
 
 .bg-success {
-  background: #32b643 !important;
+  background: #95ba24 !important;
   color: #fff; }
 
 .bg-warning {
@@ -3163,7 +3163,7 @@ a.text-error:visited {
   .meter::-webkit-meter-bar {
     background: #f0f5f8; }
   .meter::-webkit-meter-optimum-value {
-    background: #32b643; }
+    background: #95ba24; }
   .meter::-webkit-meter-suboptimum-value {
     background: #f0ac00; }
   .meter::-webkit-meter-even-less-good-value {
@@ -3171,7 +3171,7 @@ a.text-error:visited {
   .meter::-moz-meter-bar, .meter:-moz-meter-optimum, .meter:-moz-meter-sub-optimum, .meter:-moz-meter-sub-sub-optimum {
     border-radius: 0.1rem; }
   .meter:-moz-meter-optimum::-moz-meter-bar {
-    background: #32b643; }
+    background: #95ba24; }
   .meter:-moz-meter-sub-optimum::-moz-meter-bar {
     background: #f0ac00; }
   .meter:-moz-meter-sub-sub-optimum::-moz-meter-bar {
