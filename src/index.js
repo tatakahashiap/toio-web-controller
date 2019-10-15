@@ -7,6 +7,7 @@ const ctrlWrapper = document.getElementById('controller-wrapper');
 const acceleBtn = document.getElementById('accele');
 const spinBtn = document.getElementById('spin');
 const spinRightBtn = document.getElementById('spin-right');
+const playMusic = document.getElementById('musix');
 
 const support = 'ontouchend' in document;
 const TOUCH_START = (support) ? 'touchstart': 'mousedown';
@@ -58,6 +59,18 @@ const handleDevice = (toio) => {
   spinRightBtn.addEventListener(TOUCH_END, event => {
     isSpin = false;
     toio.stopCube();
+  });
+
+  playMusic.addEventListener(TOUCH_START, event => {
+    isSpin = false;
+    isMove = false;
+    toio.playMusic();
+  });
+
+  playMusic.addEventListener(TOUCH_END, event => {
+    isSpin = false;
+    isMove = false;
+    toio.stopMusic();
   });
 };
 

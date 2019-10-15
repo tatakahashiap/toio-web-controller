@@ -1,4 +1,5 @@
 import { NearestScanner } from '@toio/scanner';
+import { Note } from '@toio/cube';
 const DURATION = 0;
 const SPEED = {
   forward: [200, 200],
@@ -46,6 +47,20 @@ export default class ToioController {
   stopCube() {
     if (this.cube !== null) {
       this.cube.stop();
+    }
+  }
+
+  async playMusic() {
+    console.log(this.cube)
+    this.cube.playPresetSound(4);
+    // this.cube.playSound({
+    //
+    // }, 1)
+  }
+
+  stopMusic() {
+    if (this.cube !== null) {
+      this.cube.stopSound();
     }
   }
 

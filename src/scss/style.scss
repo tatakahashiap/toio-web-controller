@@ -55,6 +55,9 @@ body {
   &.right {
     right: 1rem;
   }
+  &.center {
+    left: calc((100% - 3rem) / 2);
+  }
   i {
     font-size: 1.3rem;
   }

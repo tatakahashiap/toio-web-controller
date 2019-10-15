@@ -4095,5 +4095,7 @@ body {
     left: 1rem; }
   .btn-mini.btn-action.right {
     right: 1rem; }
+  .btn-mini.btn-action.center {
+    left: calc((100% - 3rem) / 2); }
   .btn-mini.btn-action i {
     font-size: 1.3rem; }
